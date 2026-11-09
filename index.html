@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alma GWS CLI</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.8rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.05rem; margin-top: 2.2rem; }
+  .sub { color: #888; margin-bottom: 2.2rem; }
+  code { background: rgba(128,128,128,.15); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(128,128,128,.25); color: #888; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Alma GWS CLI</h1>
+<p class="sub">A private command-line tool for accessing your own Google Workspace data.</p>
+
+<p>Alma GWS CLI is a personal utility that runs locally on macOS. It connects to Google Workspace APIs with OAuth 2.0 so a single authenticated owner can read their own Gmail, Calendar, and Drive data from the terminal.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Reads Gmail messages and threads using the read-only scope</li>
+  <li>Queries Calendar events and Drive files on the owner's behalf</li>
+  <li>Stores OAuth credentials locally, encrypted at rest</li>
+</ul>
+
+<h2>What it does not do</h2>
+<ul>
+  <li>No server component — nothing leaves the owner's machine</li>
+  <li>No third-party data sharing, advertising, or analytics</li>
+  <li>No access beyond the scopes the owner explicitly grants</li>
+</ul>
+
+<h2>Documentation</h2>
+<p>Privacy details: <a href="./privacy.html">Privacy Policy</a></p>
+<p>Contact: <a href="mailto:kexu219@gmail.com">kexu219@gmail.com</a></p>
+
+<footer>This is a private tool, not a public product or service.</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alma GWS CLI — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  .meta { color: #888; font-size: .9rem; margin-bottom: 2rem; }
+  code { background: rgba(128,128,128,.15); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(128,128,128,.25); color: #888; font-size: .9rem; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p class="meta">Alma GWS CLI &middot; Last updated: November 9, 2026</p>
+
+<p>Alma GWS CLI ("the App") is a personal, single-user command-line tool that lets its owner access their own Google Workspace data from a local macOS machine. This policy explains what the App accesses and how that data is handled.</p>
+
+<h2>Who uses the App</h2>
+<p>The App is not a public service. It is authenticated with a single Google Account, explicitly authorized by that account's owner, and used only by that owner on their own computer. It is not distributed to third parties.</p>
+
+<h2>What data the App accesses</h2>
+<p>Access is limited to the OAuth scopes the owner grants. Currently:</p>
+<ul>
+  <li><code>gmail.readonly</code> — read email messages, threads, labels, and mailbox settings</li>
+  <li><code>userinfo.email</code> and <code>userinfo.profile</code> — the account's email address, name, and profile picture</li>
+  <li><code>openid</code> — sign-in identity confirmation</li>
+</ul>
+<p>The App cannot send, delete, or modify email while only the read-only scope is granted.</p>
+
+<h2>How data is stored</h2>
+<p>OAuth credentials and refresh tokens are stored locally on the owner's machine, encrypted at rest with AES-256-GCM, where the encryption key is kept in the macOS Keychain. Any data the App displays is processed locally and is not uploaded anywhere.</p>
+
+<h2>Data sharing</h2>
+<p>The App does not sell, rent, share, or transfer any Google user data to third parties. No advertising, analytics, or profiling is performed. Google user data is never used to train or improve any machine-learning model.</p>
+
+<h2>Data retention and deletion</h2>
+<p>The App retains no Google user data beyond what is locally cached for the duration of a session. The owner can revoke the App's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and can delete local credentials by removing <code>~/.config/gws</code> from their machine and clearing the Keychain entry.</p>
+
+<h2>Google API Services User Data Policy</h2>
+<p>The App's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Changes</h2>
+<p>Any material change to this policy will be reflected on this page with an updated date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:kexu219@gmail.com">kexu219@gmail.com</a></p>
+
+<footer>Alma GWS CLI is a private tool, not a commercial product or public service.</footer>
+</body>
+</html>
